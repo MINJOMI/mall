@@ -1,0 +1,157 @@
+/*공통*/
+*{margin: 0; padding: 0}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+body{width: 980px; margin: 0 auto;}
+.space{clear: both;}
+
+/*헤더*/
+#header{
+    overflow: hidden;
+}
+.logo{float: left;}
+.login{
+    float: right;
+    overflow: hidden;
+}
+.login li{
+    float: left;
+    padding-left: 10px;
+}
+
+/*사이드*/
+
+body{position: relative;}
+
+#aside{
+    position: absolute;
+    width: 90px;
+    right: -100px;
+}
+#aside div{
+    width: 90px;
+    height: 160px;
+    background-color: darkgray;
+    margin-bottom: 5px;
+}
+/*상단gnb*/
+
+#top_gnb{
+    overflow: hidden;
+}
+#top_gnb .menu{
+    float: left;
+    width: 140px;
+    height: 50px;
+    background: url(../Images/css_sprites.png);
+}
+#top_gnb > div.list1{background-position: -10px -410px;}
+#top_gnb > div.list2{background-position: -330px -410px;}
+#top_gnb > div.list3{background-position: -170px -480px;}
+#top_gnb > div.list4{background-position: -600px -80px;}
+#top_gnb > div.list5{background-position: -600px -220px;}
+#top_gnb > div.list6{background-position: -10px -550px;}
+#top_gnb > div.list7{background-position: -600px -290px;}
+
+#top_gnb > div.list1:hover{background-position: -170px -410px;}
+#top_gnb > div.list2:hover{background-position: -10px -480px;}
+#top_gnb > div.list3:hover{background-position: -330px -480px;}
+#top_gnb > div.list4:hover{background-position: -600px -150px;}
+#top_gnb > div.list5:hover{background-position: -600px -10px;}
+#top_gnb > div.list6:hover{background-position: -600px -360px;}
+#top_gnb > div.list7:hover{background-position: -600px -430px;}
+
+/*하단gnb*/
+
+#bottom_gnb{
+    overflow: hidden;
+}
+#bottom_gnb .menu{
+    float: left;
+    width: 98px;
+    height: 80px;
+    background: url(../Images/css_sprites.png);
+}
+
+#bottom_gnb > div.list1{background-position: -10px -10px;}
+#bottom_gnb > div.list2{background-position: -128px -10px;}
+#bottom_gnb > div.list3{background-position: -128px -110px;}
+#bottom_gnb > div.list4{background-position: -246px -210px;}
+#bottom_gnb > div.list5{background-position: -364px -10px;}
+#bottom_gnb > div.list6{background-position: -10px -210px;}
+#bottom_gnb > div.list7{background-position: -10px -310px;}
+#bottom_gnb > div.list8{background-position: -482px -110px;}
+#bottom_gnb > div.list9{background-position: -482px -10px;}
+#bottom_gnb > div.list10{background-position: -128px -310px;}
+
+#bottom_gnb > div.list1:hover{background-position: -364px -110px;}
+#bottom_gnb > div.list2:hover{background-position: -246px -10px;}
+#bottom_gnb > div.list3:hover{background-position: -10px -110px;}
+#bottom_gnb > div.list4:hover{background-position: -246px -110px;}
+#bottom_gnb > div.list5:hover{background-position: -128px -210px;}
+#bottom_gnb > div.list6:hover{background-position: -364px -210px;}
+#bottom_gnb > div.list7:hover{background-position: -10px -310px;}
+#bottom_gnb > div.list8:hover{background-position: -482px -210px;}
+#bottom_gnb > div.list9:hover{background-position: -364px -310px;}
+#bottom_gnb > div.list10:hover{background-position: -246px -310px;}
+
+/*deatil*/
+#detail{
+    overflow: hidden;
+    padding: 10px;
+    background-color: #3b414d;
+}
+#detail ul{
+    float: left;
+    width: 192px;
+    color: #f2f2f2;
+    margin-bottom: 5px
+}
+#detail li{
+    height: 13px;
+    margin-top: 5px;
+    padding: 3px 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+}
+#detail li h3{
+    font-size: 15px;
+    padding-left: 15px;
+    color: cornflowerblue
+}
+/*아티클*/
+#article{
+    overflow: hidden;
+}
+.main{
+    width: 980px;
+    height: 440px;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+.section{float: left;}
+.product{
+    width: 795px;
+    height: 400px;
+    background-color: lightslategray;
+    margin-bottom: 10px;
+}
+.sectioin_aside{
+    float: right;
+}
+.product_aside{
+    width: 170px;
+    height: 200px;
+    background-color: darkslategray;
+    margin-bottom: 10px;
+}
+#footer{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: dimgrey;
+
+}
