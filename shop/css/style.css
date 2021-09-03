@@ -2,7 +2,8 @@
 *{margin: 0; padding: 0}
 ul{list-style: none;}
 a{text-decoration: none; color: black;}
-body{width: 980px; margin: 0 auto;}
+.wrap{width: 980px; margin: 0 auto;}
+
 .space{clear: both;}
 
 /*헤더*/
@@ -134,17 +135,18 @@ body{position: relative;}
     background-position: 35% center;
     margin: 10px 0;
 }
-.section{
-    border: 1px solid #999;
+#content{
+    border: 1px solid #979DA6;
 }
 .section1{
     overflow: hidden;
     margin-bottom: 10px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 .section1 .box1{
-    border: 1px solid #999;
+    border: 1px solid #979DA6;
     width: 468px;
     height: 289px;
     float: left;
@@ -154,7 +156,7 @@ body{position: relative;}
 
 }
 .section1 .box2{
-    border: 1px solid #999;
+    border: 1px solid #979DA6;
     width: 468px;
     height: 289px;
     float: right;
@@ -166,6 +168,7 @@ body{position: relative;}
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 .section2 .product{
     width: 228px;
@@ -173,7 +176,8 @@ body{position: relative;}
     float: left;
     background-image: url(../Images/prodSm2-1.jpg);
     margin-right: 10px;
-    border: 1px solid #999;
+    border: 1px solid #979DA6;
+    margin-bottom: 10px;
 }
 .section2 .product:nth-child(1){
     margin-left: 10px;
@@ -191,13 +195,15 @@ body{position: relative;}
     overflow: hidden;
     width: 100%;
     padding: 10px;
+    padding-top: 0;
+    position: relative;
 }
 .section3 .box{
     width: 468px;
     height: 298px;
     background-image: url(../Images/prodMd3-1.jpg);
     float: left;
-    border: 1px solid #999;
+    border: 1px solid #979DA6;
     margin-right: 8px;
 }
 .section3 .box1{
@@ -205,20 +211,132 @@ body{position: relative;}
     height: 298px;
     background-image: url(../Images/prodSm3-2.jpg);
     float: left;
-    border: 1px solid #999;
-    margin-left: 9px;
+    border: 1px solid #979DA6;
+    margin-left: 7px;
+    margin-right: 3px
 }
 .section3 div:nth-child(3){
     margin-right: 0;
     background-image: url(../Images/prodSm3-3.jpg)
 }
+.btn_buy{
+    width: 40px;
+    height: 40px;
+    background-image: url(../Images/main-buy.png);
+    position: absolute;
+    bottom: 10px;
+    margin:10px;
+    text-indent: -9999999px;
+}
+.btn_buy:hover{
+    width: 100px;
+    height: 40px;
+    background-image: url(../Images/main-buy-hover.png);
+}
+#content .product:hover{
+    border: 1px solid #3D9DF2;
+}
 /*푸터*/
 #footer{
-    height: 80px;
     text-align: center;
-    line-height: 80px;
-    font-size: 35px;
+    font-size: 10px;
+}
+.first_footer{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #979DA6;
+}
+.first_footer ul{
+    width: 100%;
+    margin: 0 auto;
+}
+.first_footer li{
+    float: left;
+    color: #9e9e9e
+}
+.first_footer li:after{
+    display: inline-block;
+    content: '|';
+    margin: 0 14.9px;
+}
+.first_footer li:nth-child(12):after{
+    display: none;
+    content: '';
+    margin: 0;
+}
+.first_footer span{
     font-weight: bold;
-    border: 1px solid #999;
-    margin-top: 10px;
+}
+.second_footer{
+    padding: 25px 0;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    line-height: 15px;
+    border-bottom: 1px solid #979DA6;
+}
+.company{
+    float: left;
+}
+.f_logo{
+    float: left;
+}
+.info{
+    float: left;
+    margin-left: 30px;
+    text-align: left;
+}
+.info span{text-decoration-line: underline}
+.number{
+    position: absolute;
+    width: 165px;
+    text-align: left;
+    right: 0; left: 180px; margin: 0 auto;
+}
+.number span{font-weight: bold;}
+.number div{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    line-height: 30px;
+}
+.bank{
+    float: right;
+    text-align: left;
+    margin-right: 30px;
+}
+.bank span:nth-child(1){
+    font-weight: bold;
+}
+.bank span:last-child{
+    text-decoration-line: underline;
+}
+
+.third_footer{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #979DA6;
+    padding:0 15px;
+}
+.third_footer li{
+    float: left;
+    height: 50px;
+    width: 150px;
+    margin-right: 116px;
+    line-height: 50px;
+}
+.third_footer li:nth-child(4){
+    margin-right: 0;
+}
+.third_footer img{
+    width: 100%;
+    border: none;
+}
+
+.last_footer{
+    text-align: left;
+    background-color: #2f2f2f;
+    color: #979DA6;
+    padding: 10px 0
 }
