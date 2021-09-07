@@ -10,14 +10,16 @@ a{text-decoration: none; color: black;}
 #header{
     overflow: hidden;
 }
-.logo{float: left;}
+.logo{float: left; cursor: pointer;padding: 10px;}
 .login{
+    padding-top: 10px;
     float: right;
     overflow: hidden;
 }
 .login li{
     float: left;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 /*사이드*/
@@ -26,13 +28,14 @@ body{position: relative;}
 
 #aside{
     position: absolute;
-    width: 90px;
-    right: -100px;
-    top: 184px;
+    width: 102px;
+    left: 990px;
+    top: 20px;
 }
 #aside div{
-    width: 90px;
+    width: 102px;
     height: 150px;
+    display: block;
     background-image: url(../Images/prodAside1.png);
     margin-bottom: 5px;
 }
@@ -46,16 +49,18 @@ body{position: relative;}
     width: 140px;
     height: 50px;
     background: url(../Images/css_sprites.png);
+    cursor: pointer;
 }
 #top_gnb > div.list1{background-position: -10px -410px;}
 #top_gnb > div.list2{background-position: -330px -410px;}
 #top_gnb > div.list3{background-position: -170px -480px;}
 #top_gnb > div.list4{background-position: -600px -80px;}
-#top_gnb > div.list5{background-position: -600px -220px;}
-#top_gnb > div.list6{background-position: -10px -550px;}
+#top_gnb > div.list5{background-position: -10px -550px;}
+#top_gnb > div.list6{background-position: -600px -220px;}
 #top_gnb > div.list7{background-position: -600px -290px;}
 
-#top_gnb > div.list1:hover{background-position: -170px -410px;}
+#top_gnb > div.list1:hover,
+#top_gnb > div.list1.active{background-position: -170px -410px;}
 #top_gnb > div.list2:hover{background-position: -10px -480px;}
 #top_gnb > div.list3:hover{background-position: -330px -480px;}
 #top_gnb > div.list4:hover{background-position: -600px -150px;}
@@ -73,6 +78,7 @@ body{position: relative;}
     width: 98px;
     height: 80px;
     background: url(../Images/css_sprites.png);
+    cursor: pointer;
 }
 
 #bottom_gnb > div.list1{background-position: -10px -10px;}
@@ -92,9 +98,10 @@ body{position: relative;}
 #bottom_gnb > div.list4:hover{background-position: -246px -110px;}
 #bottom_gnb > div.list5:hover{background-position: -128px -210px;}
 #bottom_gnb > div.list6:hover{background-position: -364px -210px;}
-#bottom_gnb > div.list7:hover{background-position: -10px -310px;}
+#bottom_gnb > div.list7:hover{background-position: -482px -310px;}
 #bottom_gnb > div.list8:hover{background-position: -482px -210px;}
-#bottom_gnb > div.list9:hover{background-position: -364px -310px;}
+#bottom_gnb > div.list9:hover,
+#bottom_gnb > div.list9.active{background-position: -364px -310px;}
 #bottom_gnb > div.list10:hover{background-position: -246px -310px;}
 
 /*deatil*/
@@ -122,20 +129,53 @@ body{position: relative;}
     padding-left: 15px;
     color: cornflowerblue
 }
-/*아티클*/
-#article{
-    overflow: hidden;
+
+/*메인*/
+
+.main-banner{
+    position: relative;
+    left: 50%;
+    margin-left: -980px;
 }
-.main{
+.hidden{
+    display: none;
+}
+.narrow{
     width: 980px;
-    height: 440px;
-    background-image: url(../Images/prodBig.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 35% center;
-    margin: 10px 0;
+    margin: 0 auto;
+    position: relative;
 }
+.prod-tab{
+    position: absolute;
+    top: -410px;
+    z-index: 1;
+    right: 70px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 30%);
+}
+.prod-tab-item{
+    position: relative;
+}
+.prod-tab-image{
+    vertical-align: top;
+}
+/*마스크가 hover했을때 변화없이 그대로 위에 반응을 올려줌*/
+.prod-tab-item > .mask:hover{
+    border: 2px solid #4285f4;
+    display: block;
+    cursor: pointer;
+}
+.mask{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+/*아티클*/
+
+
 #content{
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
     border: 1px solid #979DA6;
 }
 .section1{
@@ -162,7 +202,7 @@ body{position: relative;}
     float: right;
     background-image: url(../Images/prodMid1-2.jpg);
     background-size: cover;
-    margin: 10px 13px 10px 0;
+    margin: 10px 10px 10px 0;
 }
 .section2{
     overflow: hidden;
@@ -184,7 +224,7 @@ body{position: relative;}
     background-image: url(../Images/prodSm2-2.jpg);
 }
 .section2 .product:nth-child(2){
-    margin-right:15px;
+    margin-right:20px;
     background-image: url(../Images/prodSm2-3.jpg);
 }
 .section2 .product:nth-child(4){
@@ -204,7 +244,7 @@ body{position: relative;}
     background-image: url(../Images/prodMd3-1.jpg);
     float: left;
     border: 1px solid #979DA6;
-    margin-right: 8px;
+    margin-right: 20px;
 }
 .section3 .box1{
     width: 228px;
@@ -212,8 +252,7 @@ body{position: relative;}
     background-image: url(../Images/prodSm3-2.jpg);
     float: left;
     border: 1px solid #979DA6;
-    margin-left: 7px;
-    margin-right: 3px
+    margin-right: 10px;
 }
 .section3 div:nth-child(3){
     margin-right: 0;
@@ -228,16 +267,18 @@ body{position: relative;}
     margin:10px;
     text-indent: -9999999px;
 }
-.btn_buy:hover{
+.product:hover > .btn_buy{
     width: 100px;
     height: 40px;
     background-image: url(../Images/main-buy-hover.png);
 }
 #content .product:hover{
+    cursor: pointer;
     border: 1px solid #3D9DF2;
 }
 /*푸터*/
 #footer{
+    margin-top: 50px;
     text-align: center;
     font-size: 10px;
 }
@@ -245,7 +286,8 @@ body{position: relative;}
     width: 100%;
     height: 40px;
     line-height: 40px;
-    border-bottom: 1px solid #979DA6;
+    border-bottom: 1px solid #eee;
+    border-top: 2px solid #eee;
 }
 .first_footer ul{
     width: 100%;
@@ -253,7 +295,8 @@ body{position: relative;}
 }
 .first_footer li{
     float: left;
-    color: #9e9e9e
+    color: #9e9e9e;
+    cursor: pointer;
 }
 .first_footer li:after{
     display: inline-block;
@@ -274,20 +317,21 @@ body{position: relative;}
     height: 100px;
     position: relative;
     line-height: 15px;
-    border-bottom: 1px solid #979DA6;
+    border-bottom: 1px solid #eee;
 }
 .company{
     float: left;
 }
 .f_logo{
     float: left;
+    cursor: pointer
 }
 .info{
     float: left;
     margin-left: 30px;
     text-align: left;
 }
-.info span{text-decoration-line: underline}
+.info span{text-decoration-line: underline; cursor: pointer;}
 .number{
     position: absolute;
     width: 165px;
@@ -311,6 +355,7 @@ body{position: relative;}
 }
 .bank span:last-child{
     text-decoration-line: underline;
+    cursor: pointer
 }
 
 .third_footer{
