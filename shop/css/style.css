@@ -5,7 +5,7 @@ a{text-decoration: none; color: black;}
 .narrow{width: 980px; margin: 0 auto;}
 body{font-family: 'Roboto', sans-serif;}
 .space{clear: both;}
-.wrap{overflow: hidden; 100%;}
+.wrap{overflow: hidden; width: 100%;}
 
 /*헤더*/
 #header{
@@ -291,7 +291,7 @@ body{position: relative;}
     border-top: 2px solid #eee;
 }
 .first_footer ul{
-    width: 100%;
+    width: 980px;
     margin: 0 auto;
 }
 .first_footer li{
@@ -314,11 +314,11 @@ body{position: relative;}
 }
 .second_footer{
     padding: 25px 0;
-    width: 100%;
+    width: 980px;
+    margin: 0 auto;
     height: 100px;
     position: relative;
     line-height: 15px;
-    border-bottom: 1px solid #eee;
 }
 .company{
     float: left;
@@ -363,8 +363,10 @@ body{position: relative;}
     width: 100%;
     height: 50px;
     border-bottom: 1px solid #979DA6;
+    border-top: 1px solid #979DA6;
     padding:0 15px;
 }
+.third_footer ul{width: 980px; margin: 0 auto;}
 .third_footer li{
     float: left;
     height: 50px;
@@ -386,3 +388,4 @@ body{position: relative;}
     color: #979DA6;
     padding: 10px 0
 }
+.last_footer p{width: 980px; margin: 0 auto;}
