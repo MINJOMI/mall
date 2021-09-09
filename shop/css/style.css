@@ -299,10 +299,13 @@ body{position: relative;}
     color: #9e9e9e;
     cursor: pointer;
 }
+.first_footer li:nth-child(12){
+    margin-right: 0;
+}
 .first_footer li:after{
     display: inline-block;
     content: '|';
-    margin: 0 14.9px;
+    margin: 0 15px;
 }
 .first_footer li:nth-child(12):after{
     display: none;
