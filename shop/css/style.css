@@ -24,14 +24,17 @@ body{font-family: 'Roboto', sans-serif;}
 }
 
 /*사이드*/
+/*
+position absolute의 부모에 relative를 지정하면
+앱솔루트임에도 부모기준 상대좌표를 사용할 수 있음
+앱솔루트임에도 블럭형태의 공간차지가 가능 (부모 높이 지정시!)
+*/
 
-body{position: relative;}
-
+#aside-box{position: relative;/*부모에 크기 지정을 안하니까 부유영역이 된다*/}
 #aside{
     position: absolute;
-    width: 102px;
-    left: 990px;
-    top: 20px;
+    left: 50%;
+    margin-left: 500px;
 }
 #aside div{
     width: 102px;
@@ -39,6 +42,12 @@ body{position: relative;}
     display: block;
     background-image: url(../Images/prodAside1.png);
     margin-bottom: 5px;
+}
+#aside div:nth-child(2n){
+    background-image: url(../Images/prodAside2.png);
+}
+#aside div:nth-child(3n){
+    background-image: url(../Images/prodAside3.png);
 }
 /*상단gnb*/
 
