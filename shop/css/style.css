@@ -290,7 +290,7 @@ body{position: relative;}
     border-bottom: 1px solid #eee;
     border-top: 2px solid #eee;
 }
-.footer_menu{margin: 0 auto; width: 980px;}
+.footer_menu{margin: 0 auto; width: 980px; overflow: hidden;}
 .first_footer li{
     font-size: 9px;
     float: left;
