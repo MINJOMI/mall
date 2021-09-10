@@ -5,7 +5,7 @@ a{text-decoration: none; color: black;}
 .narrow{width: 980px; margin: 0 auto;}
 body{font-family: 'Roboto', sans-serif;}
 .space{clear: both;}
-.wrap{overflow: hidden; width: 100%;}
+.wrap{overflow: hidden; width: 100%; min-width: 1020px;}
 
 /*헤더*/
 #header{
